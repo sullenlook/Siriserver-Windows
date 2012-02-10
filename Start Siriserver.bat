@@ -19,7 +19,7 @@ echo                                11
 echo                                11
 echo                            ____11____
 echo.                    
-cd scripts
 start python dns.py
-start plugins\serverstatus.bat
-python siriserver.py
+start python siriserver.py
+cd plugins
+serverstatus.bat
