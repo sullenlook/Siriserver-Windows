@@ -1,0 +1,26 @@
+This is a Siriserver remake of Eichhoernchen’s siriserver, but for Windows
+
+It includes:
+An NL version of the plugins, it has replaced the DE version, to activate it turn on DE in your idevice’s siri settings
+All Windows install instructions.
+And much plugin’s!!
+
+Setup:
+Open the install dir and install 1, 2, 3 and 4
+Open cmd and goto the folder where you have easy_install (most times it is in your python\scripts directory)
+Run: easy_install bplist
+Goto the scripts dir and open the dns.py file in editor mode, replace the ip goes here with your ip (it’s on line 4)
+Run the Startsiriserver.bat file and you’re done on the pc
+
+On your iDevice install spire from cydia
+When you installed goto settings>wifi>blue arrow of your wifi and set the dns to your pc’s ip (if your pc turns of you need to change it back to the ip of the router, or you cant internet anymore)
+Than goto settings>spire and set the server to http://guzzoni.apple.com
+
+ENJOY
+
+If you have any bug sent me the bug please to yannickdejong@me.com 
+
+
+All credits goto Eichhoernchen because he is the creator of the Linux/mac script
+
+
