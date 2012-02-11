@@ -18,8 +18,12 @@ echo                              111111
 echo                                11
 echo                                11
 echo                            ____11____
-echo.                    
+echo.       
+cd scripts             
 start python dns.py
-start python siriserver.py
 cd plugins
-serverstatus.bat
+start serverstatus.bat
+cd ..
+:start
+python siriserver.py
+goto start
