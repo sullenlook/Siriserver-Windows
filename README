@@ -16,6 +16,7 @@ Run the Startsiriserver.bat file and you’re done on the pc
 On your iDevice install spire from cydia
 When you installed goto settings>wifi>blue arrow of your wifi and set the dns to your pc’s ip (if your pc turns of you need to change it back to the ip of the router, or you cant internet anymore)
 Than goto settings>spire and set the server to http://guzzoni.apple.com
+install the CA.crt from the /scripts/certs dir
 
 ENJOY
 
