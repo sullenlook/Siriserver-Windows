@@ -1,8 +1,15 @@
 
 import socket
+import os
+import tkMessageBox as tkmb
 #         host         =>fake response
 addr = socket.gethostbyname(socket.gethostname())
 ip = 'ip goes here' #put your ip addres between the ''
+if ip == 'ip goes here':
+        tkmb.showinfo("Alert", "You must specify an ip addres on line 4, have read the instructions?")
+        os._exit(1)
+
+
 fake=['guzzoni.apple.com', ip]
 
 def fake_ip(domain,fake):
