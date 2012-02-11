@@ -2,14 +2,11 @@
 import socket
 import os
 import tkMessageBox as tkmb
-#         host         =>fake response
 addr = socket.gethostbyname(socket.gethostname())
 ip = 'ip goes here' #put your ip addres between the ''
 if ip == 'ip goes here':
-        tkmb.showinfo("Alert", "You must specify an ip addres on line 4, have read the instructions?")
+        tkmb.showinfo("Alert", "You must specify an ip addres on line 5, have read the instructions?")
         os._exit(1)
-
-
 fake=['guzzoni.apple.com', ip]
 
 def fake_ip(domain,fake):
@@ -22,20 +19,24 @@ def fake_ip(domain,fake):
 	try:
 		return socket.gethostbyname(domain)
 	except socket.error:
-		print "\nServer error get ip for this domain: "+domain 		#udps.close()
+		print "\nServer error get ip for this domain: "+domain 
+		print "\nReturn 127.0.0.1\n"
+		#udps.close()
 		return ip
 		#exit()
 		
+	#return ip
 	
 if __name__ == '__main__':
 	
 	#banner
 
+
 	
-        count=len(fake)-1
+	count=len(fake)-1
 	i=0
 	while i<count:
-		print("Domain: "+fake[i]+" is blocked and linked to: "+fake[i+1])
+		print("Domain: "+fake[i]+" has this fake ip:"+fake[i+1])
 		i=i+2
 	
 	print("=====Server Started=====")	
