@@ -6,8 +6,9 @@ All Windows install instructions.
 And much plugin’s!!
 
 Setup:
-Open the install dir and install 1, 2, 3 and 4
+Open the install dir and install 1, 2, 3
 Open cmd and goto the folder where you have easy_install (most times it is in your python\scripts directory)
+Run easy_install 'Path to 4.egg'
 Run: easy_install bplist
 Goto the scripts dir and open the dns.py file in editor mode, replace the ip goes here with your ip (it’s on line 5)
 Run the Startsiriserver.bat file and you’re done on the pc

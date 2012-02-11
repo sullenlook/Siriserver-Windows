@@ -7,7 +7,7 @@ import struct
 
 system = platform.system()
 
-libspeex = CDLL("dll/libogg.dll")
+libspeex = CDLL('dll/libogg.dll')
 
 #defines copied from: http://speex.org/docs/api/speex-api-reference/group__Codec.html
 SPEEX_SET_ENH = 0                   #Set enhancement on/off (decoder only)
