@@ -3,7 +3,7 @@ import socket
 import os
 import tkMessageBox as tkmb
 addr = socket.gethostbyname(socket.gethostname())
-ip = 'ip goes here' #put your ip addres between the ''
+ip = '192.168.0.193' #put your ip addres between the ''
 if ip == 'ip goes here':
         tkmb.showinfo("Alert", "You must specify an ip addres on line 5, have read the instructions?")
         os._exit(1)
