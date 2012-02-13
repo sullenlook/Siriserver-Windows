@@ -1,5 +1,9 @@
 This is a Siriserver remake of Eichhoernchen’s siriserver, but for Windows
 
+
+THIS ISN' T WOKING YET IT HAS A BUG WITH LIBSPEEX
+
+
 It includes:
 An NL version of the plugins, it has replaced the DE version, to activate it turn on DE in your idevice’s siri settings
 All Windows install instructions.
@@ -36,6 +40,9 @@ Move server.key server.key.secure
 Move server.key.insecure server.passless.key
 
 and copy all the generated certs to the certs folder
+
+send the CA.crt to your iDevice and install that
+in spire settings insert your ip as proxy server
 
 ENJOY
 
