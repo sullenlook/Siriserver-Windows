@@ -7,7 +7,7 @@ import struct
 
 system = platform.system()
 
-libspeex = CDLL("dll/libspeex.dll")
+libspeex = windll.LoadLibrary("dll/libspeex.dll")
 
 #defines copied from: http://speex.org/docs/api/speex-api-reference/group__Codec.html
 SPEEX_SET_ENH = 0                   #Set enhancement on/off (decoder only)
@@ -100,14 +100,14 @@ class Decoder:
 
     def decode(self, data):
         self.buffer = create_string_buffer(1024)
-        decoded_frame = (c_int16*self.frame_size.value)()
+        decoded_frame = (c_int16*c_int().value)()
         
         out = ""
         for i in range(0,len(data)):
             self.buffer = data[i]
             libspeex.speex_bits_read_from(byref(self.bits), self.buffer, len(data[i]))
             while libspeex.speex_decode_int(self.state, byref(self.bits), decoded_frame) == 0:
-                out += string_at(decoded_frame, self.frame_size.value*2)
+                out += string_at(decoded_frame, c_int().value*2)
         return out
 
     def destroy(self):
