@@ -1,24 +1,25 @@
-This is a Siriserver remake of Eichhoernchen’s siriserver, but for Windows
+This is a Siriserver remake of Eichhoernchenï¿½s siriserver, but for Windows
 
 
 THIS ISN' T WOKING YET IT HAS A BUG WITH LIBSPEEX
+If anybody knows how to make the speex.py work with the libspeex.dll please send me a message!
 
 
 It includes:
-An NL version of the plugins, it has replaced the DE version, to activate it turn on DE in your idevice’s siri settings
+An NL version of the plugins, it has replaced the DE version, to activate it turn on DE in your ideviceï¿½s siri settings
 All Windows install instructions.
-And much plugin’s!!
+And much pluginï¿½s!!
 
 Setup:
 Open the install dir and install 1, 2, 3
 Open cmd and goto the folder where you have easy_install (most times it is in your python\scripts directory)
 Run easy_install 'Path to 4.egg'
 Run: easy_install bplist
-Goto the scripts dir and open the dns.py file in editor mode, replace the ip goes here with your ip (it’s on line 5)
-Run the Startsiriserver.bat file and you’re done on the pc
+Goto the scripts dir and open the dns.py file in editor mode, replace the ip goes here with your ip (itï¿½s on line 5)
+Run the Startsiriserver.bat file and youï¿½re done on the pc
 
 On your iDevice install spire from cydia
-When you installed goto settings>wifi>blue arrow of your wifi and set the dns to your pc’s ip (if your pc turns of you need to change it back to the ip of the router, or you cant internet anymore)
+When you installed goto settings>wifi>blue arrow of your wifi and set the dns to your pcï¿½s ip (if your pc turns of you need to change it back to the ip of the router, or you cant internet anymore)
 Create certs with open ssl (by common name you must insert your ip)
 
 openssl genrsa -des3 -out ca.key 4096
